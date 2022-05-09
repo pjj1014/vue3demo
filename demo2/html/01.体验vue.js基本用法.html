@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--2.声明要被 vue 所控制的 DOM 区域-->
+    <div id="app">
+        {{username}}
+    </div>
+    <!-- 1.导入 vue 的脚本文件 -->
+    <script src="../js/vue@3.2.26.global.js"></script>
+
+    <!-- 3.创建 vue 的实例对象 -->
+    <script>
+        Vue.createApp(app).mount('#app')
+        const app = {
+            data(){
+                return{
+                    username:'zs',
+                } 
+            }
+        }
+    </script>
+</body>
+</html>
